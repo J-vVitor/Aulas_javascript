@@ -11,7 +11,27 @@
 
  -- Slice (0,2) - Fatiamento;
 
- -- 
+ -- .value pra pegar o valor do input;
+
+ -- && - AND (E);
+
+ -- || - OR (OU);
+
+ -- ! - NOT (NÃO);
+ --
+ --
+ --
+ --
+ --
+ --
+ --
+ --
+ --
+ --
+ --
+ --
+ --
+ --
 
 
 
@@ -20,3 +40,8 @@
 
 
 */
+   let num1 = 5;
+
+   let resul = 4 || 3
+
+   console.log(resul)
