@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const hora_digitada = prompt('hora: ');
+
+        if (hora_digitada >= 0 && hora_digitada <= 11) {
+            alert('Bom dia!')
+        } else if (hora_digitada >= 12 && hora_digitada <= 17) {
+            alert('Boa tarde!')
+        } else if (hora_digitada >= 18 && hora_digitada <= 23) {
+            alert('Boa noite!')
+        }
+        else {
+            alert('Horário inválido!')
+        }
+
+    </script>
+</body>
+
+</html>
