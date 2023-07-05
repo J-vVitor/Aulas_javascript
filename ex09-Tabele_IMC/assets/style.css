@@ -11,7 +11,7 @@ body{
 
 #container{
     box-sizing: border-box;
-    padding: 6px;
+    padding: 3px;
     border-radius: 10px;
     background-color: white;
     text-align: center;
@@ -21,12 +21,16 @@ body{
 }
 
 #container h1,h2,h3,H4, P{
+    padding-left: 4px;
     text-align: left;
+}
+
+h2{
+    margin: 4px;
 }
 .info{
     display:flex;
     text-align: center;
-    padding: 30px;
     justify-content: center;
     background-color:white;
 }
@@ -36,15 +40,13 @@ body{
 
 }
 
-
-
 .formulario{
     display: inline-block;
 }
 
 .formulario input{
     width:25vw;
-    height: 6vh;
+    height: 5vh;
 }
 
 
@@ -56,4 +58,9 @@ button[type="submit"]{
     border: none;
     border-radius: 6px;
     background-color:rgb(127, 170, 255) ;
+}
+
+button[type="submit"]:hover{
+    font-weight: 600;
+    background-color:rgb(81, 137, 250)
 }
