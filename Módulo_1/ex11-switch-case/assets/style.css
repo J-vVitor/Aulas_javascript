@@ -1,0 +1,19 @@
+body{
+    background:rgb(1, 73, 85);
+}
+
+section{
+    width: 50vw;
+    height: 15vw;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    padding-top: 39px;
+    font-size: 40px;
+}
