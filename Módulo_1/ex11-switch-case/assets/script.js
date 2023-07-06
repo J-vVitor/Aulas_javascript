@@ -1,7 +1,8 @@
 const dataAtual = new Date();
 const container = document.querySelector('#container');
+const min = addzero(dataAtual.getMinutes());
 
-function getDiaSemana (diaSemana){
+function getDiaSemana (diaSemana){ //DIA DA SEMANA
     let diaSemanaTexto;
 
     switch (diaSemana){
@@ -28,7 +29,7 @@ function getDiaSemana (diaSemana){
     }
 }
 
-function getMes (mes){
+function getMes (mes){ // FUNCTION MÊS
     let mesTexto;
 
     switch (mes){
@@ -70,4 +71,11 @@ function getMes (mes){
     }
 }
 
-container.innerHTML = getDiaSemana(dataAtual.getDay()) , getMes(dataAtual.getFullYear());
+function addzero (num){ //ADICIONA O ZERO EM NÚMEROS MENORES QUE 10 ;
+        return num >=10 ? num : `0${num}`;
+
+}
+
+container.innerHTML = `${getDiaSemana(dataAtual.getDay())} 
+, ${dataAtual.getDate()}   ${getMes(dataAtual.getMonth())} de 2023 
+ ${dataAtual.getHours()}:${min}`;
