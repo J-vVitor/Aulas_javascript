@@ -78,4 +78,4 @@ function addzero (num){ //ADICIONA O ZERO EM NÚMEROS MENORES QUE 10 ;
 
 container.innerHTML = `${getDiaSemana(dataAtual.getDay())} 
 , ${dataAtual.getDate()}   ${getMes(dataAtual.getMonth())} de 2023 
- ${dataAtual.getHours()}:${min}`;
+ ${addzero(dataAtual.getHours())}:${min}`;
