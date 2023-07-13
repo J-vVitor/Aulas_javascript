@@ -28,7 +28,8 @@
  --.SHIFT - REMOVE O PRIMEIRO DA LISTA ( MAS ALTERA O ÍNDICE);
 
  -- .UNSHIFT - ADICIONA NO COMEÇO DA LISTA (MAS ALTERA O ÍNDICE);
- --
+
+ -- endWith - TERMINA COM... ( endWith ('a') );
  --
  --
  --
