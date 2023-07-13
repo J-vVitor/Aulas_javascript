@@ -18,11 +18,16 @@
  -- || - OR (OU);
 
  -- ! - NOT (NÃO);
- --
- --
- --
- --
- --
+
+ -- .CONCAT - CONCATENAÇÃO DE ARRAYS;
+
+ -- .POP - REMOVE O ÚLTIMO DA LISTA;
+
+ -- PUSH - ADICIONA NO FINAL DA LISTA;
+
+ --.SHIFT - REMOVE O PRIMEIRO DA LISTA ( MAS ALTERA O ÍNDICE);
+
+ -- .UNSHIFT - ADICIONA NO COMEÇO DA LISTA (MAS ALTERA O ÍNDICE);
  --
  --
  --
