@@ -30,7 +30,9 @@
  -- .UNSHIFT - ADICIONA NO COMEÇO DA LISTA (MAS ALTERA O ÍNDICE);
 
  -- endWith - TERMINA COM... ( endWith ('a') );
- --
+
+ -- DELETE;
+ 
  --
  --
  --
