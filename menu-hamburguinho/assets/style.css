@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+div{
+    padding: 30px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    border: 1px solid red;
+}
+
+#clique button{
+    cursor: pointer;
+    margin-left: 90px;
+    width: 60px;
+    height: 60px;
+}
+
+#list{
+    display: none;
+}
+
+div ul li{
+    padding: 6px;
+    text-align: center;
+    list-style-type: none;
+    background-color:lightgrey;
+    border-top: 1px solid white;
+    transition: all 300ms ease-in-out;
+}
+
+div ul li:hover{
+    background-color: rgb(144, 143, 143);
+}
+
+div ul li a  {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
