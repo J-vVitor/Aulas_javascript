@@ -3,6 +3,21 @@ var peso = document.querySelector('#peso');
 var divResultados = document.querySelector('#resultados');
 
 
+altura.addEventListener('keypress', () =>{
+    let alturalength = altura.value.length
+
+    if(alturalength === 1){
+        altura.value += '.'
+    }
+})
+peso.addEventListener('keypress', () =>{
+    let pesolength = peso.value.length
+
+    if(pesolength === 3){
+        peso.value += '.'
+    }
+})
+
 
 function envio(){
     var conversao = altura.value / 100;
@@ -12,7 +27,7 @@ function envio(){
     if(imc < 18.5){
         divResultados.innerHTML = `Você possui índice de massa corporal igual a ${imc.toFixed(2)}, sendo classificado como: ABAIXO DO PESO`//abaixo do normal
        }else if(imc >= 18.5 && imc <= 24.5){
-        divResultados.innerHTML = `Você possui índice de massa corporal igual a ${imc.toFixed(2)}, sendo classificado como: NORMAL` //normal
+        divResultados.innerHTML = `Você possui índice de massa corporal igual a ${imc.toFixed(2)}, sendo classificado como: Peso ideal` //normal
        }else if(imc >= 25 && imc <= 29.9){
         divResultados.innerHTML = `Você possui índice de massa corporal igual a ${imc.toFixed(2)}, sendo classificado como: SOBREPESO`//sobrepeso
        }else if(imc >=30 && imc <=34.9 ){
