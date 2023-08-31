@@ -13,7 +13,7 @@ altura.addEventListener('keypress', () =>{
 peso.addEventListener('keypress', () =>{
     let pesolength = peso.value.length
 
-    if(pesolength === 3){
+    if(pesolength === 2){
         peso.value += '.'
     }
 })
@@ -26,7 +26,7 @@ function envio(){
     
     if(imc < 18.5){
         divResultados.innerHTML = `Você possui índice de massa corporal igual a ${imc.toFixed(2)}, sendo classificado como: ABAIXO DO PESO`//abaixo do normal
-       }else if(imc >= 18.5 && imc <= 24.5){
+       }else if(imc >= 18.5 && imc <= 24.9){
         divResultados.innerHTML = `Você possui índice de massa corporal igual a ${imc.toFixed(2)}, sendo classificado como: Peso ideal` //normal
        }else if(imc >= 25 && imc <= 29.9){
         divResultados.innerHTML = `Você possui índice de massa corporal igual a ${imc.toFixed(2)}, sendo classificado como: SOBREPESO`//sobrepeso
