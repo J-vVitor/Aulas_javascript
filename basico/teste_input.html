@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input onfocus="ativado()" onblur="desativado()" type="text" id="caixaInput">
+
+    <script>
+        const caixaInput = document.querySelector('#caixaInput');
+
+        function ativado(){
+            caixaInput.style.background = 'yellow'
+        }
+
+        function desativado(){
+            var valorInput = document.querySelector('#caixaInput').value
+
+            if(valorInput.length < 3 ){
+                caixaInput.style.background = 'red'
+            }else{
+                caixaInput.style.background = 'lightgreen'
+            }
+        }
+    </script>
+</body>
+</html>

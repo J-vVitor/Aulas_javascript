@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="cpf">
+
+    <script>
+        const cpf = document.querySelector("#cpf");
+
+        cpf.addEventListener('keypress',() =>{
+            if(cpf.value.length ===3 || cpf.value.length === 7 ){
+                cpf.value += '.'
+            }else if(cpf.value.length ===11){
+                cpf.value += '-'
+            }
+        })
+    </script>
+</body>
+</html>
