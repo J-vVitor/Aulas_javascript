@@ -10,11 +10,14 @@
     <div id="tudo">
         <div id="itens">
             <input type="text" id="text">
-            <button onclick="envio()">Adicionar</button>
+            <div id="buts">
+                <button onclick="envio()">Adicionar</button>
+                <button onclick="remover()">Remover</button>
+            </div>
         </div>
 
         <div id="itensAdicionados">
-            <p>teste</p>
+            
         </div>
     </div>
 
@@ -23,7 +26,21 @@
     <script>
         var text = document.querySelector('#text');
         var itensAdicionados = document.querySelector('#itensAdicionados');
-        var valorInput = text.value;
+        
+
+        function envio(){
+            var valorInput = text.value;
+            var valorItens = itensAdicionados.innerHTML += []
+
+            if(valorInput === ''){
+                alert('Digite um item para ser adicionado!')
+            }else{
+                itensAdicionados.innerHTML += `<li>${valorInput}</li>`
+            }
+
+        }
+
+
         
     </script>
 </body>

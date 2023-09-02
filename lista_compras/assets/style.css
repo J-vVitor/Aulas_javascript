@@ -25,9 +25,14 @@ input{
     width: 200px;
 }
 
+#buts{
+    margin: auto;
+    width: 200px;
+}
+
 button{
-    margin-top: 6px;
-    padding: 6px;
+    margin: 8px;
+    padding: 10px;
 }
 
 #itensAdicionados{
