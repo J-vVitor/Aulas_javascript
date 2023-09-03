@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="inputTexto">
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="ordenar()">Ordenar</button>
+    <button onclick="resetar()">resetar</button>
+
+    <script>
+        var inputTexto = document.querySelector('#inputTexto')
+        var objetos = Array('cadeira', 'impressora', 'garfo')
+
+        function adicionar() {
+            var valorInput = inputTexto.value;
+
+            if (objetos.indexOf(valorInput) !== -1) {
+                alert('esse item já existe na lista')
+                inputTexto.value = ' '
+            } else if (valorInput == '') {
+                alert('Valor invalido')
+            } else {
+                objetos.push(valorInput)
+                alert(objetos)
+                inputTexto.value = ''
+            }
+        }
+
+        function ordenar() {
+            objetos.sort()
+            alert(objetos)
+        }
+
+        function resetar(){
+            var listaReset = objetos = Array('cadeira', 'impressora', 'garfo')
+            alert('Lista resetada!')
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
