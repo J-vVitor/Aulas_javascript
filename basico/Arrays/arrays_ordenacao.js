@@ -9,7 +9,7 @@ console.log(lista_de_frutas.sort()) // ORDENA POR ORDEM ALFABÉTICA
     lista_de_frutas[0] = [1] 
     lista_de_frutas[1] = [32]
     lista_de_frutas[2] = [7]
-    lista_de_frutas[3] = [12]
+    lista_de_frutas[3] = [12]   
 
     A ORDEM FICARIA: 1 , 12, 32 ,7;
 
