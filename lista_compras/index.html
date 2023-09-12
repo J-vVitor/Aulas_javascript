@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ToDoList | JV</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
+    <h1>ToDoList | JV</h1>
+
     <div id="tudo">
-        <div id="itens">
-            <input type="text" id="text">
+
+        <div id="questoes">
+            <input type="text" id="text" placeholder=" Adicione uma tarefa">
             <div id="buts">
-                <button onclick="envio()">Adicionar</button>
-                <button onclick="remover()">Remover</button>
+                <button onclick="envio()">+</button>
             </div>
         </div>
 
-        <div id="itensAdicionados">
-            
+
+        <div id="lista">
+            <ol>
+
+            </ol>
         </div>
     </div>
 
 
-
     <script>
-        var text = document.querySelector('#text');
-        var itensAdicionados = document.querySelector('#itensAdicionados');
-        
+        var inputValor = document.querySelector('#text');
+        var lista = document.querySelector('#lista');
 
-        function envio(){
-            var valorInput = text.value;
-            var valorItens = itensAdicionados.innerHTML += []
 
-            if(valorInput === ''){
-                alert('Digite um item para ser adicionado!')
-            }else{
-                itensAdicionados.innerHTML += `<li>${valorInput}</li>`
+
+        function envio() {
+            if (inputValor.value === '') {
+                alert('Nem um item')
             }
-
+            else if (inputValor.value != '') {
+                let li = document.createElement('li');
+                li.innerHTML = inputValor.value;
+                lista.append(li);
+                inputValor.value = ''
+            }
         }
 
 
-        
     </script>
 </body>
+
 </html>
