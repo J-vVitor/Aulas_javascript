@@ -61,10 +61,3 @@ li {
     list-style-type: none;
 
 }
-
-input#radiu{
-    border: 1px solid red;
-    width: 30px;
-    height: 30px;
-    float: right;
-}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ORIENTAÇÃO VOLTADA A OBJETOS:
+                 ABSTRAÇÃO! -->
+
+    <script>
+        class contaBancaria {
+            // agencia
+            // numeroConta
+            // Saldo
+            // Limite
+            constructor(){
+                this.agencia = 1068
+                this.numeroConta = 3684917
+                this.saldo = 1000
+                this.limite = 3000
+            }
+
+            depositar(valorDeposito){
+                this.saldo += valorDeposito
+            }
+
+            sacar(valorSaque){
+                this.saldo -= valorSaque
+            }
+
+            consultarSaldo(){
+                return this.saldo
+            }
+        }
+
+        let x = new contaBancaria
+
+        console.log(`Seu saldo é de: R${x.saldo}`)
+
+         x.depositar(360)
+         let primeiroDeposito = 360
+
+        console.log(`Seu primeiro deposito foi de: R${primeiroDeposito}`)
+
+
+        console.log(`Seu saldo atual é de: R${x.saldo}`)
+
+        let primeiroSaque = 1000
+
+        console.log(`Seu saque foi de: R$:${primeiroSaque}`)
+
+        x.sacar(1000)
+
+        console.log(`Seu saldo atual é de: R$ ${x.saldo}`)
+
+
+    </script>
+</body>
+
+</html>
