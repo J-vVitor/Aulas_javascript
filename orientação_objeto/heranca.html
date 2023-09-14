@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Passaros {
+            constructor(cor,tamanho){
+                this.cor = cor
+                this.tamanho = tamanho
+            }
+        }
+
+        class Tucano extends Passaros {
+            constructor(){
+                super('verde',60)
+            }
+        }
+
+        class Papagaio extends Passaros {
+            constructor(){
+                super('azul',30)
+            }
+        }
+
+        class Gaviao extends Passaros{
+            constructor(){
+                super('Preto e branco',60)
+            }
+        }
+        
+        let tucano = new Tucano()
+        let papagaio = new Papagaio()
+        let gaviao = new Gaviao()
+        
+        
+        console.log(tucano)
+        console.log(papagaio)
+        console.log(gaviao)
+        
+
+    </script>
+</body>
+</html>

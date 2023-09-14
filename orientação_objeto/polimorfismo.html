@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+          class Passaros {
+            constructor(cor,tamanho){
+                this.cor = cor
+                this.tamanho = tamanho
+            }
+            voar(){
+                console.log('voa')
+            }
+        }
+
+        class Tucano extends Passaros {
+            constructor(){
+                super('verde',60)
+            }
+            
+        }
+
+        class Papagaio extends Passaros {
+            constructor(){
+                super('azul',30)
+            }
+        }
+
+        class Gaviao extends Passaros{
+            constructor(){
+                super('Preto e branco',60)
+            }
+        }
+
+        class Avestruz  extends Passaros{
+            constructor(){
+                super('preto e branco',15000)
+            }
+
+            voar(){                     //POLIMORFISMO, SOBREPONDO UM MÉTODO
+                console.log('Não voa!')
+            }
+        }
+        
+        let tucano = new Tucano()
+        let papagaio = new Papagaio()
+        let gaviao = new Gaviao()
+        let avestruz = new Avestruz()
+        
+        
+       tucano.voar()
+       papagaio.voar()
+       avestruz.voar()
+        
+    </script>
+</body>
+</html>

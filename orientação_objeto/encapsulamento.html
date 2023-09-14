@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        class televisao{
+            constructor(){
+                this._canais = Array(1,4,7,9)
+                this.canalAtivo = 1
+                this.volume = 10
+
+               
+            }
+
+            controleVolume(aumentarVolume){
+                    this.volume += aumentarVolume
+                }
+
+        }
+
+        let tv = new televisao()
+
+        console.log(`Volume ${tv.volume}`)
+    </script>
+</body>
+</html>
