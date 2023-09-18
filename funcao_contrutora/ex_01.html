@@ -8,14 +8,19 @@
 <body>
 
     <script>
+        /*
         var Carro = function(){
             this.marca = 'BMW'
             this.modelo = 'X1'
             this.cor = 'Branca'
             this.velocidadeInicial = 0
+            this.velocidadeMaxima = 180
 
             this.acelerar = function(){
-                let velocidade = this.getVelocidadeAtual() + 10
+                let velocidade = this.getVelocidadeAtual() + 50
+                if(velocidade > 180){
+                    velocidade = this.velocidadeMaxima
+                }
                 this.setVelocidadeAtual(velocidade)
             }
 
@@ -30,13 +35,68 @@
         }
 
         var carro = new Carro()
+        */
+        
 
-        console.log(carro.getVelocidadeAtual())
-        carro.acelerar()
-        console.log(carro.getVelocidadeAtual())
-        carro.acelerar()
-        console.log(carro.getVelocidadeAtual())
 
+        var Carro2 = function(){
+            this.marca = 'BMW'
+            this.modelo = 'X1'
+            this.cor = 'Branca'
+            this.velocidadeInicial = 0
+            
+            var velocidadeMaxima = 180
+            var quilometrosRodados = 0
+
+
+            this.acelerar = function(){
+                let velocidade = this.getVelocidadeAtual() + 50
+                if(velocidade > velocidadeMaxima){
+                    velocidade = velocidadeMaxima
+                }
+                this.setVelocidadeAtual(velocidade)
+                setQuilometrosRodados(0.05)
+
+            }
+
+            var setQuilometrosRodados = function(q){
+                quilometrosRodados += q
+                console.log(`KM: ${quilometrosRodados}`)
+            }
+
+          this.getVelocidadeAtual = function(){
+            return this.velocidadeInicial
+          }
+
+          this.setVelocidadeAtual = function(velocidade){
+            this.velocidadeInicial = velocidade
+          }
+
+        }
+
+        var carro2 = new Carro2()
+
+        console.log(carro2.getVelocidadeAtual())
+        carro2.acelerar()
+        console.log(carro2.getVelocidadeAtual())
+        carro2.acelerar()
+        console.log(carro2.getVelocidadeAtual())
+        carro2.acelerar()
+        console.log(carro2.getVelocidadeAtual())
+        carro2.acelerar()
+        console.log(carro2.getVelocidadeAtual())
+        carro2.acelerar()
+        console.log(carro2.getVelocidadeAtual())
+        carro2.acelerar()
+        console.log(carro2.getVelocidadeAtual())
+        carro2.acelerar()
+        console.log(carro2.getVelocidadeAtual())
+        
+
+    
+
+    
+    
    
     </script>
 </body>
