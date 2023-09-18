@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var Carro = function(){
+            this.marca = 'BMW'
+            this.modelo = 'X1'
+            this.cor = 'Branca'
+            this.velocidadeInicial = 0
+
+            this.acelerar = function(){
+                let velocidade = this.getVelocidadeAtual() + 10
+                this.setVelocidadeAtual(velocidade)
+            }
+
+          this.getVelocidadeAtual = function(){
+            return this.velocidadeInicial
+          }
+
+          this.setVelocidadeAtual = function(velocidade){
+            this.velocidadeInicial = velocidade
+          }
+
+        }
+
+        var carro = new Carro()
+
+        console.log(carro.getVelocidadeAtual())
+        carro.acelerar()
+        console.log(carro.getVelocidadeAtual())
+        carro.acelerar()
+        console.log(carro.getVelocidadeAtual())
+
+   
+    </script>
+</body>
+</html>
