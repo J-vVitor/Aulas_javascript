@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let factoryBicicleta = function(cor,marcha,aro){
+            return{
+            cor,
+            marcha,
+            aro
+        }
+        }
+
+        let bicicletaUm = factoryBicicleta('vermalha','única','29')
+
+        let bicicletaDois = factoryBicicleta('verde','dupla','26')
+
+        console.log(bicicletaUm)
+        console.log(bicicletaDois)
+    </script>
+</body>
+</html>

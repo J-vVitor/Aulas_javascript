@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let produto = {
+            descricao : 'Celular',
+            valor: 1600,
+
+            detalhe: {
+                fabricante: 'Apple',
+                modelo: 'iphone 8 plus'
+            }
+        }
+
+        let {detalhe:d} = produto // ALTERANDO NOME DA VARIÁVEL
+
+        console.log(d)
+    </script>
+</body>
+</html>
